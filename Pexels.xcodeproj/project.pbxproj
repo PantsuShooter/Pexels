@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A32CCBE213B419C003A3009 /* PhotoVieweModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A32CCBD213B419C003A3009 /* PhotoVieweModel.m */; };
+		0A4DB4E62138D06100E12AF4 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DB4E52138D06100E12AF4 /* SearchTableViewController.m */; };
+		0A4DB4EC2138D09A00E12AF4 /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DB4EB2138D09A00E12AF4 /* SearchTableViewCell.m */; };
+		0AAEB536211EADCF00A8FEC3 /* CustomViewActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEB535211EADCF00A8FEC3 /* CustomViewActionController.m */; };
+		0AAEB5382120BBC800A8FEC3 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEB5372120BBC800A8FEC3 /* Favorite.storyboard */; };
+		0AAEB53B2120BCA100A8FEC3 /* FavoriteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEB53A2120BCA100A8FEC3 /* FavoriteCollectionViewController.m */; };
+		0AAEB53F2120DAD600A8FEC3 /* FavoriteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEB53E2120DAD600A8FEC3 /* FavoriteCollectionViewCell.m */; };
+		0AAEB5422120F7A300A8FEC3 /* FavoriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEB5412120F7A300A8FEC3 /* FavoriteManager.m */; };
+		0ABC12E32119522F00F2181E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC12E22119522F00F2181E /* AppDelegate.m */; };
+		0ABC12E92119522F00F2181E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABC12E72119522F00F2181E /* Main.storyboard */; };
+		0ABC12EB2119524000F2181E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABC12EA2119524000F2181E /* Assets.xcassets */; };
+		0ABC12EE2119524000F2181E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABC12EC2119524000F2181E /* LaunchScreen.storyboard */; };
+		0ABC12F12119524000F2181E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC12F02119524000F2181E /* main.m */; };
+		0ABC12FB2119524000F2181E /* PexelsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC12FA2119524000F2181E /* PexelsTests.m */; };
+		0ABC13062119524000F2181E /* PexelsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC13052119524000F2181E /* PexelsUITests.m */; };
+		0ABC1314211A096E00F2181E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABC1313211A096E00F2181E /* Home.storyboard */; };
+		0ABC1316211A0DA000F2181E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABC1315211A0DA000F2181E /* Search.storyboard */; };
+		0ABC1318211A0DC000F2181E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABC1317211A0DC000F2181E /* Settings.storyboard */; };
+		0ABC131C211A0E6000F2181E /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC131B211A0E6000F2181E /* ServerManager.m */; };
+		0AD7C14D21231A64003EC68E /* FavoriteData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7C14B21231A64003EC68E /* FavoriteData.xcdatamodeld */; };
+		0ADDF444211A967800FFA20C /* CuratedPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDF443211A967800FFA20C /* CuratedPhotoModel.m */; };
+		0ADDF453211BA44700FFA20C /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDF452211BA44700FFA20C /* HomeCollectionViewController.m */; };
+		0ADDF459211BB44C00FFA20C /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDF458211BB44C00FFA20C /* HomeCollectionViewCell.m */; };
+		0AEE3E0921441A8C0034D426 /* LiveBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE3E0721441A8C0034D426 /* LiveBackgroundViewController.m */; };
+		37BE5206CC1209FB12845B8F /* libPods-PexelsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 953FBDFBA61760330DFD2BB9 /* libPods-PexelsUITests.a */; };
+		577F34D1F321F402F3843D59 /* libPods-Pexels.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA823665626B288FCDEAA40 /* libPods-Pexels.a */; };
+		85938DB86E77E84ED1BFB497 /* libPods-PexelsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7F9B1EDFA1A0BDD914217D /* libPods-PexelsTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ABC12F72119524000F2181E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ABC12D62119522F00F2181E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ABC12DD2119522F00F2181E;
+			remoteInfo = Pexels;
+		};
+		0ABC13022119524000F2181E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ABC12D62119522F00F2181E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ABC12DD2119522F00F2181E;
+			remoteInfo = Pexels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A32CCBC213B419C003A3009 /* PhotoVieweModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoVieweModel.h; sourceTree = "<group>"; };
+		0A32CCBD213B419C003A3009 /* PhotoVieweModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoVieweModel.m; sourceTree = "<group>"; };
+		0A4DB4E42138D06100E12AF4 /* SearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		0A4DB4E52138D06100E12AF4 /* SearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		0A4DB4EA2138D09A00E12AF4 /* SearchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewCell.h; sourceTree = "<group>"; };
+		0A4DB4EB2138D09A00E12AF4 /* SearchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewCell.m; sourceTree = "<group>"; };
+		0AAEB534211EADCF00A8FEC3 /* CustomViewActionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewActionController.h; sourceTree = "<group>"; };
+		0AAEB535211EADCF00A8FEC3 /* CustomViewActionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewActionController.m; sourceTree = "<group>"; };
+		0AAEB5372120BBC800A8FEC3 /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
+		0AAEB5392120BCA100A8FEC3 /* FavoriteCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FavoriteCollectionViewController.h; path = "../New Group/FavoriteCollectionViewController.h"; sourceTree = "<group>"; };
+		0AAEB53A2120BCA100A8FEC3 /* FavoriteCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteCollectionViewController.m; sourceTree = "<group>"; };
+		0AAEB53D2120DAD600A8FEC3 /* FavoriteCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteCollectionViewCell.h; sourceTree = "<group>"; };
+		0AAEB53E2120DAD600A8FEC3 /* FavoriteCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteCollectionViewCell.m; sourceTree = "<group>"; };
+		0AAEB5402120F7A300A8FEC3 /* FavoriteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteManager.h; sourceTree = "<group>"; };
+		0AAEB5412120F7A300A8FEC3 /* FavoriteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteManager.m; sourceTree = "<group>"; };
+		0ABC12DE2119522F00F2181E /* Pexels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pexels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABC12E12119522F00F2181E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0ABC12E22119522F00F2181E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0ABC12E82119522F00F2181E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0ABC12EA2119524000F2181E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ABC12ED2119524000F2181E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ABC12EF2119524000F2181E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ABC12F02119524000F2181E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0ABC12F62119524000F2181E /* PexelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PexelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABC12FA2119524000F2181E /* PexelsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PexelsTests.m; sourceTree = "<group>"; };
+		0ABC12FC2119524000F2181E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ABC13012119524000F2181E /* PexelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PexelsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABC13052119524000F2181E /* PexelsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PexelsUITests.m; sourceTree = "<group>"; };
+		0ABC13072119524000F2181E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ABC1313211A096E00F2181E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0ABC1315211A0DA000F2181E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		0ABC1317211A0DC000F2181E /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		0ABC131A211A0E6000F2181E /* ServerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerManager.h; sourceTree = "<group>"; };
+		0ABC131B211A0E6000F2181E /* ServerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
+		0AD7C14C21231A64003EC68E /* Pexels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pexels.xcdatamodel; sourceTree = "<group>"; };
+		0ADDF442211A967800FFA20C /* CuratedPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CuratedPhotoModel.h; sourceTree = "<group>"; };
+		0ADDF443211A967800FFA20C /* CuratedPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuratedPhotoModel.m; sourceTree = "<group>"; };
+		0ADDF451211BA44600FFA20C /* HomeCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
+		0ADDF452211BA44700FFA20C /* HomeCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
+		0ADDF457211BB44C00FFA20C /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		0ADDF458211BB44C00FFA20C /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		0AEE3E0721441A8C0034D426 /* LiveBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiveBackgroundViewController.m; path = ../../../../../../Desktop/LiveBackgroundViewController.m; sourceTree = "<group>"; };
+		0AEE3E0821441A8C0034D426 /* LiveBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiveBackgroundViewController.h; path = ../../../../../../Desktop/LiveBackgroundViewController.h; sourceTree = "<group>"; };
+		0B7F9B1EDFA1A0BDD914217D /* libPods-PexelsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PexelsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA6A93CCD8E16FB965DAC9C /* Pods-PexelsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PexelsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PexelsUITests/Pods-PexelsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CA8E7A2C29AFE225B194723 /* Pods-Pexels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pexels.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pexels/Pods-Pexels.release.xcconfig"; sourceTree = "<group>"; };
+		953FBDFBA61760330DFD2BB9 /* libPods-PexelsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PexelsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		986BEAA6D32AE1FAC9A34023 /* Pods-PexelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PexelsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PexelsTests/Pods-PexelsTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AA823665626B288FCDEAA40 /* libPods-Pexels.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pexels.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3900F6BC3D2F62FCBD29B7B /* Pods-PexelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PexelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PexelsTests/Pods-PexelsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3E60DAD15AA69573BEBDCE7 /* Pods-PexelsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PexelsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PexelsUITests/Pods-PexelsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E169B4E3D943D12156C6A67F /* Pods-Pexels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pexels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pexels/Pods-Pexels.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ABC12DB2119522F00F2181E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577F34D1F321F402F3843D59 /* libPods-Pexels.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABC12F32119524000F2181E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85938DB86E77E84ED1BFB497 /* libPods-PexelsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABC12FE2119524000F2181E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37BE5206CC1209FB12845B8F /* libPods-PexelsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4DB4DD2138B85300E12AF4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0A4DB4E42138D06100E12AF4 /* SearchTableViewController.h */,
+				0A4DB4E52138D06100E12AF4 /* SearchTableViewController.m */,
+				0A4DB4EA2138D09A00E12AF4 /* SearchTableViewCell.h */,
+				0A4DB4EB2138D09A00E12AF4 /* SearchTableViewCell.m */,
+				0A32CCBC213B419C003A3009 /* PhotoVieweModel.h */,
+				0A32CCBD213B419C003A3009 /* PhotoVieweModel.m */,
+			);
+			name = Search;
+			path = Home/Search;
+			sourceTree = "<group>";
+		};
+		0AAEB53C2120BCC800A8FEC3 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				0AAEB5392120BCA100A8FEC3 /* FavoriteCollectionViewController.h */,
+				0AAEB53A2120BCA100A8FEC3 /* FavoriteCollectionViewController.m */,
+				0AAEB53D2120DAD600A8FEC3 /* FavoriteCollectionViewCell.h */,
+				0AAEB53E2120DAD600A8FEC3 /* FavoriteCollectionViewCell.m */,
+				0AD7C14B21231A64003EC68E /* FavoriteData.xcdatamodeld */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		0ABC12D52119522F00F2181E = {
+			isa = PBXGroup;
+			children = (
+				0ABC12E02119522F00F2181E /* Pexels */,
+				0ABC12F92119524000F2181E /* PexelsTests */,
+				0ABC13042119524000F2181E /* PexelsUITests */,
+				0ABC12DF2119522F00F2181E /* Products */,
+				7204E74C23ABABD330983101 /* Pods */,
+				2747B3266329861B954CA3EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0ABC12DF2119522F00F2181E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC12DE2119522F00F2181E /* Pexels.app */,
+				0ABC12F62119524000F2181E /* PexelsTests.xctest */,
+				0ABC13012119524000F2181E /* PexelsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ABC12E02119522F00F2181E /* Pexels */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC12E12119522F00F2181E /* AppDelegate.h */,
+				0ABC12E22119522F00F2181E /* AppDelegate.m */,
+				0ABC131A211A0E6000F2181E /* ServerManager.h */,
+				0ABC131B211A0E6000F2181E /* ServerManager.m */,
+				0AAEB5402120F7A300A8FEC3 /* FavoriteManager.h */,
+				0AAEB5412120F7A300A8FEC3 /* FavoriteManager.m */,
+				0ADDF43B211A684900FFA20C /* Home */,
+				0A4DB4DD2138B85300E12AF4 /* Search */,
+				0AAEB53C2120BCC800A8FEC3 /* Favorite */,
+				0AEE3E0621441A5A0034D426 /* Settings */,
+				0ABC1319211A0DFA00F2181E /* Storyboard */,
+				0ABC12EA2119524000F2181E /* Assets.xcassets */,
+				0ABC12EC2119524000F2181E /* LaunchScreen.storyboard */,
+				0ABC12EF2119524000F2181E /* Info.plist */,
+				0ABC12F02119524000F2181E /* main.m */,
+			);
+			path = Pexels;
+			sourceTree = "<group>";
+		};
+		0ABC12F92119524000F2181E /* PexelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC12FA2119524000F2181E /* PexelsTests.m */,
+				0ABC12FC2119524000F2181E /* Info.plist */,
+			);
+			path = PexelsTests;
+			sourceTree = "<group>";
+		};
+		0ABC13042119524000F2181E /* PexelsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC13052119524000F2181E /* PexelsUITests.m */,
+				0ABC13072119524000F2181E /* Info.plist */,
+			);
+			path = PexelsUITests;
+			sourceTree = "<group>";
+		};
+		0ABC1319211A0DFA00F2181E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC12E72119522F00F2181E /* Main.storyboard */,
+				0ABC1313211A096E00F2181E /* Home.storyboard */,
+				0ABC1315211A0DA000F2181E /* Search.storyboard */,
+				0AAEB5372120BBC800A8FEC3 /* Favorite.storyboard */,
+				0ABC1317211A0DC000F2181E /* Settings.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0ADDF43B211A684900FFA20C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0ADDF442211A967800FFA20C /* CuratedPhotoModel.h */,
+				0ADDF443211A967800FFA20C /* CuratedPhotoModel.m */,
+				0ADDF457211BB44C00FFA20C /* HomeCollectionViewCell.h */,
+				0ADDF458211BB44C00FFA20C /* HomeCollectionViewCell.m */,
+				0ADDF451211BA44600FFA20C /* HomeCollectionViewController.h */,
+				0ADDF452211BA44700FFA20C /* HomeCollectionViewController.m */,
+				0AAEB534211EADCF00A8FEC3 /* CustomViewActionController.h */,
+				0AAEB535211EADCF00A8FEC3 /* CustomViewActionController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0AEE3E0621441A5A0034D426 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0AEE3E0821441A8C0034D426 /* LiveBackgroundViewController.h */,
+				0AEE3E0721441A8C0034D426 /* LiveBackgroundViewController.m */,
+			);
+			name = Settings;
+			path = Favorite/Settings;
+			sourceTree = "<group>";
+		};
+		2747B3266329861B954CA3EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AA823665626B288FCDEAA40 /* libPods-Pexels.a */,
+				0B7F9B1EDFA1A0BDD914217D /* libPods-PexelsTests.a */,
+				953FBDFBA61760330DFD2BB9 /* libPods-PexelsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7204E74C23ABABD330983101 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E169B4E3D943D12156C6A67F /* Pods-Pexels.debug.xcconfig */,
+				7CA8E7A2C29AFE225B194723 /* Pods-Pexels.release.xcconfig */,
+				B3900F6BC3D2F62FCBD29B7B /* Pods-PexelsTests.debug.xcconfig */,
+				986BEAA6D32AE1FAC9A34023 /* Pods-PexelsTests.release.xcconfig */,
+				B3E60DAD15AA69573BEBDCE7 /* Pods-PexelsUITests.debug.xcconfig */,
+				5EA6A93CCD8E16FB965DAC9C /* Pods-PexelsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ABC12DD2119522F00F2181E /* Pexels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ABC130A2119524000F2181E /* Build configuration list for PBXNativeTarget "Pexels" */;
+			buildPhases = (
+				5171D9BB1FEA7DA70A3595C8 /* [CP] Check Pods Manifest.lock */,
+				0ABC12DA2119522F00F2181E /* Sources */,
+				0ABC12DB2119522F00F2181E /* Frameworks */,
+				0ABC12DC2119522F00F2181E /* Resources */,
+				6715990E3057B27480F8A942 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pexels;
+			productName = Pexels;
+			productReference = 0ABC12DE2119522F00F2181E /* Pexels.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0ABC12F52119524000F2181E /* PexelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ABC130D2119524000F2181E /* Build configuration list for PBXNativeTarget "PexelsTests" */;
+			buildPhases = (
+				560230EA83E6F1113EF6B023 /* [CP] Check Pods Manifest.lock */,
+				0ABC12F22119524000F2181E /* Sources */,
+				0ABC12F32119524000F2181E /* Frameworks */,
+				0ABC12F42119524000F2181E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ABC12F82119524000F2181E /* PBXTargetDependency */,
+			);
+			name = PexelsTests;
+			productName = PexelsTests;
+			productReference = 0ABC12F62119524000F2181E /* PexelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0ABC13002119524000F2181E /* PexelsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ABC13102119524000F2181E /* Build configuration list for PBXNativeTarget "PexelsUITests" */;
+			buildPhases = (
+				F97B9A36D3211E27235D4235 /* [CP] Check Pods Manifest.lock */,
+				0ABC12FD2119524000F2181E /* Sources */,
+				0ABC12FE2119524000F2181E /* Frameworks */,
+				0ABC12FF2119524000F2181E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ABC13032119524000F2181E /* PBXTargetDependency */,
+			);
+			name = PexelsUITests;
+			productName = PexelsUITests;
+			productReference = 0ABC13012119524000F2181E /* PexelsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ABC12D62119522F00F2181E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Цындрин Антон";
+				TargetAttributes = {
+					0ABC12DD2119522F00F2181E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					0ABC12F52119524000F2181E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0ABC12DD2119522F00F2181E;
+					};
+					0ABC13002119524000F2181E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0ABC12DD2119522F00F2181E;
+					};
+				};
+			};
+			buildConfigurationList = 0ABC12D92119522F00F2181E /* Build configuration list for PBXProject "Pexels" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ABC12D52119522F00F2181E;
+			productRefGroup = 0ABC12DF2119522F00F2181E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ABC12DD2119522F00F2181E /* Pexels */,
+				0ABC12F52119524000F2181E /* PexelsTests */,
+				0ABC13002119524000F2181E /* PexelsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ABC12DC2119522F00F2181E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABC12EE2119524000F2181E /* LaunchScreen.storyboard in Resources */,
+				0ABC12EB2119524000F2181E /* Assets.xcassets in Resources */,
+				0AAEB5382120BBC800A8FEC3 /* Favorite.storyboard in Resources */,
+				0ABC12E92119522F00F2181E /* Main.storyboard in Resources */,
+				0ABC1318211A0DC000F2181E /* Settings.storyboard in Resources */,
+				0ABC1314211A096E00F2181E /* Home.storyboard in Resources */,
+				0ABC1316211A0DA000F2181E /* Search.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABC12F42119524000F2181E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABC12FF2119524000F2181E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5171D9BB1FEA7DA70A3595C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pexels-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		560230EA83E6F1113EF6B023 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PexelsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6715990E3057B27480F8A942 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pexels/Pods-Pexels-resources.sh",
+				"${PODS_ROOT}/ARChromeActivity/ARChromeActivity/ARChromeActivity.png",
+				"${PODS_ROOT}/ARChromeActivity/ARChromeActivity/ARChromeActivity@2x.png",
+				"${PODS_ROOT}/ARChromeActivity/ARChromeActivity/ARChromeActivity@2x~ipad.png",
+				"${PODS_ROOT}/ARChromeActivity/ARChromeActivity/ARChromeActivity~ipad.png",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/ARSafariActivity-iPad.png",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/ARSafariActivity-iPad@2x.png",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/ARSafariActivity@2x.png",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/cs.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/da.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/de.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/en.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/es-ES.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/es.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/fr.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/it.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/ja.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/ko.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/nb.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/nl.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/ru.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/sk.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/sv.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/vi.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/zh-Hans.lproj",
+				"${PODS_ROOT}/ARSafariActivity/ARSafariActivity/zh-Hant.lproj",
+				"${PODS_ROOT}/JBWebViewController/JBWebViewController/Icons.xcassets",
+				"${PODS_CONFIGURATION_BUILD_DIR}/NYTPhotoViewer/NYTPhotoViewer.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARChromeActivity.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARChromeActivity@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARChromeActivity@2x~ipad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARChromeActivity~ipad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARSafariActivity-iPad.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARSafariActivity-iPad@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARSafariActivity@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cs.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/da.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/de.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/es-ES.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/es.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fr.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/it.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ja.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ko.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nb.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nl.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ru.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sk.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sv.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/vi.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hant.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NYTPhotoViewer.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pexels/Pods-Pexels-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97B9A36D3211E27235D4235 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PexelsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ABC12DA2119522F00F2181E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAEB53B2120BCA100A8FEC3 /* FavoriteCollectionViewController.m in Sources */,
+				0AD7C14D21231A64003EC68E /* FavoriteData.xcdatamodeld in Sources */,
+				0A32CCBE213B419C003A3009 /* PhotoVieweModel.m in Sources */,
+				0AAEB536211EADCF00A8FEC3 /* CustomViewActionController.m in Sources */,
+				0A4DB4E62138D06100E12AF4 /* SearchTableViewController.m in Sources */,
+				0ABC131C211A0E6000F2181E /* ServerManager.m in Sources */,
+				0AEE3E0921441A8C0034D426 /* LiveBackgroundViewController.m in Sources */,
+				0ADDF444211A967800FFA20C /* CuratedPhotoModel.m in Sources */,
+				0ABC12F12119524000F2181E /* main.m in Sources */,
+				0ABC12E32119522F00F2181E /* AppDelegate.m in Sources */,
+				0AAEB53F2120DAD600A8FEC3 /* FavoriteCollectionViewCell.m in Sources */,
+				0ADDF453211BA44700FFA20C /* HomeCollectionViewController.m in Sources */,
+				0ADDF459211BB44C00FFA20C /* HomeCollectionViewCell.m in Sources */,
+				0A4DB4EC2138D09A00E12AF4 /* SearchTableViewCell.m in Sources */,
+				0AAEB5422120F7A300A8FEC3 /* FavoriteManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABC12F22119524000F2181E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABC12FB2119524000F2181E /* PexelsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABC12FD2119524000F2181E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABC13062119524000F2181E /* PexelsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ABC12F82119524000F2181E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ABC12DD2119522F00F2181E /* Pexels */;
+			targetProxy = 0ABC12F72119524000F2181E /* PBXContainerItemProxy */;
+		};
+		0ABC13032119524000F2181E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ABC12DD2119522F00F2181E /* Pexels */;
+			targetProxy = 0ABC13022119524000F2181E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0ABC12E72119522F00F2181E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ABC12E82119522F00F2181E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0ABC12EC2119524000F2181E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ABC12ED2119524000F2181E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ABC13082119524000F2181E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0ABC13092119524000F2181E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0ABC130B2119524000F2181E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E169B4E3D943D12156C6A67F /* Pods-Pexels.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				INFOPLIST_FILE = Pexels/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.Pexels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ABC130C2119524000F2181E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA8E7A2C29AFE225B194723 /* Pods-Pexels.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				INFOPLIST_FILE = Pexels/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.Pexels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0ABC130E2119524000F2181E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3900F6BC3D2F62FCBD29B7B /* Pods-PexelsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				INFOPLIST_FILE = PexelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.PexelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pexels.app/Pexels";
+			};
+			name = Debug;
+		};
+		0ABC130F2119524000F2181E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 986BEAA6D32AE1FAC9A34023 /* Pods-PexelsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				INFOPLIST_FILE = PexelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.PexelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pexels.app/Pexels";
+			};
+			name = Release;
+		};
+		0ABC13112119524000F2181E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E60DAD15AA69573BEBDCE7 /* Pods-PexelsUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				INFOPLIST_FILE = PexelsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.PexelsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pexels;
+			};
+			name = Debug;
+		};
+		0ABC13122119524000F2181E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA6A93CCD8E16FB965DAC9C /* Pods-PexelsUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P92Y33YJZ;
+				INFOPLIST_FILE = PexelsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Personal.PexelsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pexels;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ABC12D92119522F00F2181E /* Build configuration list for PBXProject "Pexels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABC13082119524000F2181E /* Debug */,
+				0ABC13092119524000F2181E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ABC130A2119524000F2181E /* Build configuration list for PBXNativeTarget "Pexels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABC130B2119524000F2181E /* Debug */,
+				0ABC130C2119524000F2181E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ABC130D2119524000F2181E /* Build configuration list for PBXNativeTarget "PexelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABC130E2119524000F2181E /* Debug */,
+				0ABC130F2119524000F2181E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ABC13102119524000F2181E /* Build configuration list for PBXNativeTarget "PexelsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABC13112119524000F2181E /* Debug */,
+				0ABC13122119524000F2181E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AD7C14B21231A64003EC68E /* FavoriteData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AD7C14C21231A64003EC68E /* Pexels.xcdatamodel */,
+			);
+			currentVersion = 0AD7C14C21231A64003EC68E /* Pexels.xcdatamodel */;
+			path = FavoriteData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0ABC12D62119522F00F2181E /* Project object */;
+}

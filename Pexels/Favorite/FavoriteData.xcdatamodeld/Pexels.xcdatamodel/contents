@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="FavoritePhotoModel" representedClassName="FavoritePhotoModel" syncable="YES" codeGenerationType="class">
+        <attribute name="favoritePhotoAddDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="favoritePhotoHeight" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="favoritePhotoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoritePhotoPhotographer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoritePhotoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoritePhotoWidth" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="favoritePhotoSrc" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FavoritePhotoSrc" inverseName="favoritePhotoModel" inverseEntity="FavoritePhotoSrc" syncable="YES"/>
+    </entity>
+    <entity name="FavoritePhotoSrc" representedClassName="FavoritePhotoSrc" syncable="YES" codeGenerationType="class">
+        <attribute name="favoriteLandscape" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteLarge" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteLarge2x" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteMedium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteOriginal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoritePortrait" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteSmall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteSquare" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteTiny" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="favoritePhotoModel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FavoritePhotoModel" inverseName="favoritePhotoSrc" inverseEntity="FavoritePhotoModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FavoritePhotoModel" positionX="-3834" positionY="-819" width="128" height="150"/>
+        <element name="FavoritePhotoSrc" positionX="-3627" positionY="-864" width="128" height="195"/>
+    </elements>
+</model>
