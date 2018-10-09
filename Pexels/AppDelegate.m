@@ -19,9 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"FavoriteData"];
-
 
     return YES;
 }

@@ -12,16 +12,16 @@
 
 + (ServerManager*)sharedManager;
 
-- (void)getCuratedPhotosPer_page:(NSInteger)per_page
+- (void)getCuratedPhotosPerPage:(NSInteger)perPage
                      page:(NSInteger)page
                 onSuccess:(void(^)(NSArray* photos)) success
                 onFailure:(void(^)(NSError* error, NSInteger statusCode)) failure;
 
 
--(void)getSearchPhotoUseQuery:(NSString*)query
-                     per_page:(NSInteger)per_page
+- (void)getSearchPhotoUseQuery:(NSString *)query
+                     perPage:(NSInteger)perPage
                          page:(NSInteger)page
-                    onSuccess:(void(^)(NSArray* photos)) success
-                    onFailure:(void(^)(NSError* error, NSInteger statusCode)) failure;
+                    onSuccess:(void(^)(NSArray *photos)) success
+                    onFailure:(void(^)(NSError *error, NSInteger statusCode)) failure;
 
 @end

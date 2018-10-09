@@ -32,8 +32,7 @@
     return manager;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         NSURL *baseURL = [NSURL URLWithString:REQUEST_BASE_URL];
@@ -44,13 +43,13 @@
     return self;
 }
 
-- (void)getCuratedPhotosPer_page:(NSInteger)per_page
+- (void)getCuratedPhotosPerPage:(NSInteger)perPage
                      page:(NSInteger)page
                 onSuccess:(void(^)(NSArray* photos)) success
-                onFailure:(void(^)(NSError* error, NSInteger statusCode)) failure{
+                onFailure:(void(^)(NSError* error, NSInteger statusCode)) failure {
     
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
-     @(per_page), @"per_page",
+     @(perPage), @"per_page",
      @(page),     @"page",nil];
     
     [self.sessionManager GET:@"curated"
@@ -69,14 +68,14 @@
 }
 
 - (void)getSearchPhotoUseQuery:(NSString *)query
-                      per_page:(NSInteger)per_page
+                      perPage:(NSInteger)perPage
                           page:(NSInteger)page
                      onSuccess:(void (^)(NSArray *))success
                      onFailure:(void (^)(NSError *, NSInteger))failure{
     
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
                                 query,       @"query",
-                                @(per_page), @"per_page",
+                                @(perPage), @"per_page",
                                 @(page),     @"page",nil];
     
     

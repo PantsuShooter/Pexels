@@ -16,7 +16,6 @@
 
 @interface FavoriteManager ()
 
-
 @end
 @implementation FavoriteManager
 
@@ -31,16 +30,13 @@
     return manager;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
-        
         
     }
     return self;
 }
-
 
 - (void)addToArraySelectedModel:(CuratedPhotoModel*)selectedModel{
     
@@ -51,13 +47,13 @@
         
         NSString *alertString = [NSString stringWithFormat:@"You already added a photo to favorites."];
         [self alertWithTitleString:@"Error!" andmassageString:alertString];
-        
-    }else{
+    }
+    else{
     
     FavoritePhotoModel *favoritePhotoModel = [FavoritePhotoModel MR_createEntity];
     FavoritePhotoSrc *favoritePhotoSrc     = [FavoritePhotoSrc MR_createEntity];
     
-    
+        
     [favoritePhotoModel setFavoritePhotoWidth:selectedModel.photoWidth];
     [favoritePhotoModel setFavoritePhotoUrl:selectedModel.photoUrl];
     [favoritePhotoModel setFavoritePhotoPhotographer:selectedModel.photoPhotographer];
@@ -77,8 +73,6 @@
 
     favoritePhotoModel.favoritePhotoSrc = favoritePhotoSrc;
     
-    
-
     
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
         if (success) {

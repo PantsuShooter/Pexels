@@ -47,7 +47,6 @@ static NSString * const reuseIdentifier = @"homeCell";
 
 - (void)setup {
     self.curatedPhotoArray = [[NSMutableArray alloc] init];
-    
     self.loadingNowPhotos = 0;
     self.collectionView.alwaysBounceVertical = NO;
     self.nowIsLoadingIndicator.hidesWhenStopped = YES;
@@ -227,7 +226,7 @@ static NSString * const reuseIdentifier = @"homeCell";
 #pragma mark - request
 - (void)request {
     
-    [[ServerManager sharedManager] getCuratedPhotosPer_page:40
+    [[ServerManager sharedManager] getCuratedPhotosPerPage:40
                                                        page:self.page
                                                   onSuccess:^(NSArray *photos) {
                                                       
@@ -262,8 +261,6 @@ static NSString * const reuseIdentifier = @"homeCell";
                                                       });
                                                       
                                                   }];
-    
-    
 }
 
 @end

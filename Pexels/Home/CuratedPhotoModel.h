@@ -10,13 +10,13 @@
 
 @interface CuratedPhotoModel : NSObject
 
-@property(strong,nonatomic)NSString* photoPhotographer;
+@property(strong,nonatomic)NSString *photoPhotographer;
 @property(assign,nonatomic)double photoHeight;
 @property(assign,nonatomic)double photoWidth;
-@property(strong,nonatomic)NSString* photoId;
-@property(strong,nonatomic)NSString* photoUrl;
+@property(strong,nonatomic)NSString *photoId;
+@property(strong,nonatomic)NSString *photoUrl;
 
-@property(strong,nonatomic)NSArray*  photoSrc;
+@property(strong,nonatomic)NSArray *photoSrc;
 
 
 @end

@@ -25,8 +25,8 @@
 
 @interface FavoriteCollectionViewController ()
 
-@property(strong,nonatomic)NSMutableArray* favorite;
-@property(strong,nonatomic)FavoritePhotoModel     *favoritePhotoModel;
+@property(strong,nonatomic)NSMutableArray *favorite;
+@property(strong,nonatomic)FavoritePhotoModel *favoritePhotoModel;
 @property(strong,nonatomic)NYTPhotosViewController *photosViewController;
 
 
@@ -44,14 +44,6 @@ static NSString * const reuseIdentifier = @"favoriteCell";
     NSLog(@"HomeCollectionViewController| self.favorite count %lu",(unsigned long)[self.favorite count]);
     
     NSLog(@"FavoriteCollectionViewController| viewDidLoad");
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-   // [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
     
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -78,15 +70,6 @@ static NSString * const reuseIdentifier = @"favoriteCell";
     return CGSizeMake(cellSize - inset, cellSize - inset);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -171,8 +154,6 @@ static NSString * const reuseIdentifier = @"favoriteCell";
     NSLog(@"SearchTableViewController|didSelectItemAtIndexPath %@",indexPath);
     
 }
-
-
 
 - (void)shareAction {
     

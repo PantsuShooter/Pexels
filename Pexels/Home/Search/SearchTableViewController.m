@@ -104,8 +104,6 @@
     self.tableView.backgroundView = tempImageView;
 }
 
-
-
 - (void)addInfiniteScrolling
 {
     
@@ -163,11 +161,9 @@
 
     self.selectedModel = [self.curatedPhotoArray objectAtIndex:indexPath.row];
     NSLog(@"SearchTableViewController| Cell selected %ld",(long)indexPath.row);
-    
 
     PhotoVieweModel *selectedSearchModel = [[PhotoVieweModel alloc] init];
     selectedSearchModel.placeholderImage = [UIImage imageNamed:@"Placeholder"];
-    
     
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     NSBlockOperation *operationObj = [NSBlockOperation blockOperationWithBlock:^{
@@ -251,49 +247,6 @@
     [RKDropdownAlert title:titleString message:massageString backgroundColor:[UIColor blackColor] textColor:[UIColor orangeColor] time:2.0f delegate:nil];
     
 }
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
@@ -305,7 +258,7 @@
 
 - (void)request {
     [[ServerManager sharedManager] getSearchPhotoUseQuery:self.searchBar.text
-                                                 per_page:40
+                                                 perPage:40
                                                      page:self.page
                                                 onSuccess:^(NSArray *photos) {
                                                     
@@ -337,7 +290,8 @@
                                                         [self tableViewBackground:[UIImage imageNamed:@"404.1.png"]];
                                                         [self.indicatorView stopAnimating];
                                                         [self.tableView reloadData];
-                                                    }else{
+                                                    }
+                                                    else {
                                                         [self.tableView setSeparatorColor:[UIColor blackColor]];
                                                         self.tableView.backgroundView = nil;
                                                         [self.indicatorView stopAnimating];
@@ -345,10 +299,7 @@
                                                     }
                                                 } onFailure:^(NSError *error, NSInteger statusCode) {
        
-                                                   
     } ];
-    
-    
 }
 
 @end
