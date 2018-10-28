@@ -108,7 +108,7 @@
 {
     
     self.page = 1;
-    __weak SearchTableViewController *weakSelf = self;
+    __weak typeof(self) weakSelf = self;
 
     [self.tableView addInfiniteScrollingWithActionHandler:^{
         NSLog(@"SearchTableViewController| addInfiniteScrollingWithActionHandler");

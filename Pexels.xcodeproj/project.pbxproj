@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A32CCBE213B419C003A3009 /* PhotoVieweModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A32CCBD213B419C003A3009 /* PhotoVieweModel.m */; };
-		0A4DB4E62138D06100E12AF4 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DB4E52138D06100E12AF4 /* SearchTableViewController.m */; };
-		0A4DB4EC2138D09A00E12AF4 /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DB4EB2138D09A00E12AF4 /* SearchTableViewCell.m */; };
+		0A1576AE2185754100BD0566 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1576A82185754100BD0566 /* SearchTableViewController.m */; };
+		0A1576AF2185754100BD0566 /* PhotoVieweModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1576AC2185754100BD0566 /* PhotoVieweModel.m */; };
+		0A1576B02185754100BD0566 /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1576AD2185754100BD0566 /* SearchTableViewCell.m */; };
+		0A1576B32185756600BD0566 /* LiveBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1576B22185756600BD0566 /* LiveBackgroundViewController.m */; };
 		0AAEB536211EADCF00A8FEC3 /* CustomViewActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEB535211EADCF00A8FEC3 /* CustomViewActionController.m */; };
 		0AAEB5382120BBC800A8FEC3 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEB5372120BBC800A8FEC3 /* Favorite.storyboard */; };
 		0AAEB53B2120BCA100A8FEC3 /* FavoriteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEB53A2120BCA100A8FEC3 /* FavoriteCollectionViewController.m */; };
@@ -30,7 +31,6 @@
 		0ADDF444211A967800FFA20C /* CuratedPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDF443211A967800FFA20C /* CuratedPhotoModel.m */; };
 		0ADDF453211BA44700FFA20C /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDF452211BA44700FFA20C /* HomeCollectionViewController.m */; };
 		0ADDF459211BB44C00FFA20C /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDF458211BB44C00FFA20C /* HomeCollectionViewCell.m */; };
-		0AEE3E0921441A8C0034D426 /* LiveBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE3E0721441A8C0034D426 /* LiveBackgroundViewController.m */; };
 		37BE5206CC1209FB12845B8F /* libPods-PexelsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 953FBDFBA61760330DFD2BB9 /* libPods-PexelsUITests.a */; };
 		577F34D1F321F402F3843D59 /* libPods-Pexels.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA823665626B288FCDEAA40 /* libPods-Pexels.a */; };
 		85938DB86E77E84ED1BFB497 /* libPods-PexelsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7F9B1EDFA1A0BDD914217D /* libPods-PexelsTests.a */; };
@@ -54,16 +54,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A32CCBC213B419C003A3009 /* PhotoVieweModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoVieweModel.h; sourceTree = "<group>"; };
-		0A32CCBD213B419C003A3009 /* PhotoVieweModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoVieweModel.m; sourceTree = "<group>"; };
-		0A4DB4E42138D06100E12AF4 /* SearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
-		0A4DB4E52138D06100E12AF4 /* SearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
-		0A4DB4EA2138D09A00E12AF4 /* SearchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewCell.h; sourceTree = "<group>"; };
-		0A4DB4EB2138D09A00E12AF4 /* SearchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewCell.m; sourceTree = "<group>"; };
+		0A1576A82185754100BD0566 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchTableViewController.m; path = Pexels/Search/SearchTableViewController.m; sourceTree = SOURCE_ROOT; };
+		0A1576A92185754100BD0566 /* PhotoVieweModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoVieweModel.h; path = Pexels/Search/PhotoVieweModel.h; sourceTree = SOURCE_ROOT; };
+		0A1576AA2185754100BD0566 /* SearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchTableViewCell.h; path = Pexels/Search/SearchTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		0A1576AB2185754100BD0566 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchTableViewController.h; path = Pexels/Search/SearchTableViewController.h; sourceTree = SOURCE_ROOT; };
+		0A1576AC2185754100BD0566 /* PhotoVieweModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoVieweModel.m; path = Pexels/Search/PhotoVieweModel.m; sourceTree = SOURCE_ROOT; };
+		0A1576AD2185754100BD0566 /* SearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchTableViewCell.m; path = Pexels/Search/SearchTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		0A1576B12185756600BD0566 /* LiveBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiveBackgroundViewController.h; path = Pexels/Settings/LiveBackgroundViewController.h; sourceTree = SOURCE_ROOT; };
+		0A1576B22185756600BD0566 /* LiveBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiveBackgroundViewController.m; path = Pexels/Settings/LiveBackgroundViewController.m; sourceTree = SOURCE_ROOT; };
+		0A1576B4218575FB00BD0566 /* FavoriteCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteCollectionViewController.h; sourceTree = "<group>"; };
 		0AAEB534211EADCF00A8FEC3 /* CustomViewActionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewActionController.h; sourceTree = "<group>"; };
 		0AAEB535211EADCF00A8FEC3 /* CustomViewActionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewActionController.m; sourceTree = "<group>"; };
 		0AAEB5372120BBC800A8FEC3 /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
-		0AAEB5392120BCA100A8FEC3 /* FavoriteCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FavoriteCollectionViewController.h; path = "../New Group/FavoriteCollectionViewController.h"; sourceTree = "<group>"; };
 		0AAEB53A2120BCA100A8FEC3 /* FavoriteCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteCollectionViewController.m; sourceTree = "<group>"; };
 		0AAEB53D2120DAD600A8FEC3 /* FavoriteCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteCollectionViewCell.h; sourceTree = "<group>"; };
 		0AAEB53E2120DAD600A8FEC3 /* FavoriteCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteCollectionViewCell.m; sourceTree = "<group>"; };
@@ -95,8 +97,6 @@
 		0ADDF452211BA44700FFA20C /* HomeCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
 		0ADDF457211BB44C00FFA20C /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
 		0ADDF458211BB44C00FFA20C /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
-		0AEE3E0721441A8C0034D426 /* LiveBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiveBackgroundViewController.m; path = ../../../../../../Desktop/LiveBackgroundViewController.m; sourceTree = "<group>"; };
-		0AEE3E0821441A8C0034D426 /* LiveBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiveBackgroundViewController.h; path = ../../../../../../Desktop/LiveBackgroundViewController.h; sourceTree = "<group>"; };
 		0B7F9B1EDFA1A0BDD914217D /* libPods-PexelsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PexelsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA6A93CCD8E16FB965DAC9C /* Pods-PexelsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PexelsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PexelsUITests/Pods-PexelsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7CA8E7A2C29AFE225B194723 /* Pods-Pexels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pexels.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pexels/Pods-Pexels.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,12 +139,12 @@
 		0A4DB4DD2138B85300E12AF4 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				0A4DB4E42138D06100E12AF4 /* SearchTableViewController.h */,
-				0A4DB4E52138D06100E12AF4 /* SearchTableViewController.m */,
-				0A4DB4EA2138D09A00E12AF4 /* SearchTableViewCell.h */,
-				0A4DB4EB2138D09A00E12AF4 /* SearchTableViewCell.m */,
-				0A32CCBC213B419C003A3009 /* PhotoVieweModel.h */,
-				0A32CCBD213B419C003A3009 /* PhotoVieweModel.m */,
+				0A1576A92185754100BD0566 /* PhotoVieweModel.h */,
+				0A1576AC2185754100BD0566 /* PhotoVieweModel.m */,
+				0A1576AA2185754100BD0566 /* SearchTableViewCell.h */,
+				0A1576AD2185754100BD0566 /* SearchTableViewCell.m */,
+				0A1576AB2185754100BD0566 /* SearchTableViewController.h */,
+				0A1576A82185754100BD0566 /* SearchTableViewController.m */,
 			);
 			name = Search;
 			path = Home/Search;
@@ -153,7 +153,7 @@
 		0AAEB53C2120BCC800A8FEC3 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
-				0AAEB5392120BCA100A8FEC3 /* FavoriteCollectionViewController.h */,
+				0A1576B4218575FB00BD0566 /* FavoriteCollectionViewController.h */,
 				0AAEB53A2120BCA100A8FEC3 /* FavoriteCollectionViewController.m */,
 				0AAEB53D2120DAD600A8FEC3 /* FavoriteCollectionViewCell.h */,
 				0AAEB53E2120DAD600A8FEC3 /* FavoriteCollectionViewCell.m */,
@@ -254,8 +254,8 @@
 		0AEE3E0621441A5A0034D426 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				0AEE3E0821441A8C0034D426 /* LiveBackgroundViewController.h */,
-				0AEE3E0721441A8C0034D426 /* LiveBackgroundViewController.m */,
+				0A1576B12185756600BD0566 /* LiveBackgroundViewController.h */,
+				0A1576B22185756600BD0566 /* LiveBackgroundViewController.m */,
 			);
 			name = Settings;
 			path = Favorite/Settings;
@@ -551,19 +551,19 @@
 			files = (
 				0AAEB53B2120BCA100A8FEC3 /* FavoriteCollectionViewController.m in Sources */,
 				0AD7C14D21231A64003EC68E /* FavoriteData.xcdatamodeld in Sources */,
-				0A32CCBE213B419C003A3009 /* PhotoVieweModel.m in Sources */,
 				0AAEB536211EADCF00A8FEC3 /* CustomViewActionController.m in Sources */,
-				0A4DB4E62138D06100E12AF4 /* SearchTableViewController.m in Sources */,
 				0ABC131C211A0E6000F2181E /* ServerManager.m in Sources */,
-				0AEE3E0921441A8C0034D426 /* LiveBackgroundViewController.m in Sources */,
 				0ADDF444211A967800FFA20C /* CuratedPhotoModel.m in Sources */,
 				0ABC12F12119524000F2181E /* main.m in Sources */,
+				0A1576B32185756600BD0566 /* LiveBackgroundViewController.m in Sources */,
 				0ABC12E32119522F00F2181E /* AppDelegate.m in Sources */,
 				0AAEB53F2120DAD600A8FEC3 /* FavoriteCollectionViewCell.m in Sources */,
+				0A1576AE2185754100BD0566 /* SearchTableViewController.m in Sources */,
 				0ADDF453211BA44700FFA20C /* HomeCollectionViewController.m in Sources */,
 				0ADDF459211BB44C00FFA20C /* HomeCollectionViewCell.m in Sources */,
-				0A4DB4EC2138D09A00E12AF4 /* SearchTableViewCell.m in Sources */,
 				0AAEB5422120F7A300A8FEC3 /* FavoriteManager.m in Sources */,
+				0A1576AF2185754100BD0566 /* PhotoVieweModel.m in Sources */,
+				0A1576B02185754100BD0566 /* SearchTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

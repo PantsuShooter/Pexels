@@ -58,7 +58,7 @@ static NSString * const reuseIdentifier = @"homeCell";
 {
 
     self.page = 1;
-    __weak HomeCollectionViewController *weakSelf = self;
+    __weak typeof(self) weakSelf = self;
     
     [self.collectionView addInfiniteScrollingWithActionHandler:^{
         NSLog(@"HomeCollectionViewController| addInfiniteScrollingWithActionHandler");
@@ -117,7 +117,7 @@ static NSString * const reuseIdentifier = @"homeCell";
 #pragma mark - sheetSetupAndCall
 - (void)sheetSetupAndCall {
     
-    __weak HomeCollectionViewController *weakSelf = self;
+    __weak typeof(self) weakSelf = self;
     
     //*setup sheet button's
     RMAction *shareAction = [RMAction<UIView *> actionWithTitle:@"Share" style:RMActionStyleCancel andHandler:^(RMActionController<UIView *> *controller) {
@@ -159,11 +159,11 @@ static NSString * const reuseIdentifier = @"homeCell";
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 
-            NSString *alertString = [NSString stringWithFormat:@"Photo taken by '%@' successfully saved.",self.selectedModel.photoPhotographer];
-            [self alertWithTitleString:@"Success!" andmassageString:alertString];
+            NSString *alertString = [NSString stringWithFormat:@"Photo taken by '%@' successfully saved.",weakSelf.selectedModel.photoPhotographer];
+            [weakSelf alertWithTitleString:@"Success!" andmassageString:alertString];
                weakSelf.loadingNowPhotos = weakSelf.loadingNowPhotos - 1;
                 
-                [self photoLoadingLable];
+                [weakSelf photoLoadingLable];
                 
                 if (weakSelf.loadingNowPhotos == 0) {
                     weakSelf.nowIsLoadingLable.hidden = YES;
@@ -196,7 +196,7 @@ static NSString * const reuseIdentifier = @"homeCell";
 //*Lable set singular or plural
 - (void)photoLoadingLable {
     
-    __weak HomeCollectionViewController *weakSelf = self;
+    __weak typeof(self) weakSelf = self;
     
     if (weakSelf.loadingNowPhotos == 1) {
         self.nowIsLoadingLable.text = [NSString stringWithFormat:@"Loading %ld photo",(long)weakSelf.loadingNowPhotos];
